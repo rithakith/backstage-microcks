@@ -43,6 +43,7 @@
     "@backstage/plugin-search-backend-node": "^1.4.0",
     "@backstage/plugin-signals-backend": "^0.3.11",
     "@backstage/plugin-techdocs-backend": "^2.1.4",
+    "@microcks/microcks-backstage-provider": "^0.0.7",
     "app": "link:../app",
     "better-sqlite3": "^12.0.0",
     "node-gyp": "^10.0.0",

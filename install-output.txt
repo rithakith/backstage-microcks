@@ -1,0 +1,23 @@
+﻿Γ₧ñ YN0000: ┬╖ Yarn 4.4.1
+Γ₧ñ YN0000: Γöî Resolution step
+Γ₧ñ YN0000: Γöö Completed in 1s 307ms
+Γ₧ñ YN0000: Γöî Post-resolution validation
+Γ₧ñ YN0060: Γöé @testing-library/react is listed by your project with version 14.3.1 (pc9eb9), which doesn't satisfy what @backstage/test-utils requests (^16.0.0).
+Γ₧ñ YN0060: Γöé react is listed by your project with version 18.3.1 (pd98da), which doesn't satisfy what @material-ui/core and other dependencies request (but they have non-overlapping ranges!).
+Γ₧ñ YN0060: Γöé react-dom is listed by your project with version 18.3.1 (pfa800), which doesn't satisfy what @material-ui/core and other dependencies request (but they have non-overlapping ranges!).
+Γ₧ñ YN0002: Γöé app@workspace:packages/app doesn't provide @types/react (pceee1), requested by @backstage/app-defaults and other dependencies.
+Γ₧ñ YN0002: Γöé app@workspace:packages/app doesn't provide jest (p99cdc), requested by @backstage/cli.
+Γ₧ñ YN0002: Γöé app@workspace:packages/app doesn't provide webpack (p299d9), requested by @backstage/cli.
+Γ₧ñ YN0002: Γöé backend@workspace:packages/backend doesn't provide jest (p35ee3), requested by @backstage/cli.
+Γ₧ñ YN0002: Γöé backend@workspace:packages/backend doesn't provide webpack (p00f29), requested by @backstage/cli.
+Γ₧ñ YN0002: Γöé root@workspace:. doesn't provide webpack (p40c38), requested by @backstage/cli.
+Γ₧ñ YN0086: Γöé Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+Γ₧ñ YN0086: Γöé Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+Γ₧ñ YN0000: Γöö Completed
+Γ₧ñ YN0000: Γöî Fetch step
+Γ₧ñ YN0000: Γöö Completed in 3s 730ms
+Γ₧ñ YN0000: Γöî Link step
+Γ₧ñ YN0007: Γöé isolated-vm@npm:6.0.2 must be built because it never has been before or the last one failed
+Γ₧ñ YN0009: Γöé isolated-vm@npm:6.0.2 couldn't be built successfully (exit code 1, logs can be found here: C:\Users\ritzy\AppData\Local\Temp\xfs-200a36f8\build.log)
+Γ₧ñ YN0000: Γöö Completed in 29s 398ms
+Γ₧ñ YN0000: ┬╖ Failed with errors in 34s 971ms

@@ -1,0 +1,102 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Pastry API",
+        "version": "1.0.0",
+        "description": "A sample Pastry API for testing Microcks with Backstage"
+    },
+    "paths": {
+        "/pastries": {
+            "get": {
+                "operationId": "listPastries",
+                "summary": "List all pastries",
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Pastry"
+                                    }
+                                },
+                                "examples": {
+                                    "pastries_json": {
+                                        "value": [
+                                            {
+                                                "name": "Croissant",
+                                                "description": "A flaky pastry",
+                                                "price": 2.50
+                                            },
+                                            {
+                                                "name": "Eclair",
+                                                "description": "Filled with cream",
+                                                "price": 3.00
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pastries/{name}": {
+            "get": {
+                "operationId": "getPastryByName",
+                "summary": "Get a pastry by name",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Pastry"
+                                },
+                                "examples": {
+                                    "Croissant": {
+                                        "value": {
+                                            "name": "Croissant",
+                                            "description": "A flaky pastry",
+                                            "price": 2.50
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Pastry": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}

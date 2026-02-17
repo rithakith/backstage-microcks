@@ -1,0 +1,51 @@
+﻿Starting app, backend
+node.exe : Loaded config 
+from app-config.yaml
+At C:\Users\ritzy\AppData\Ro
+aming\npm\yarn.ps1:24 char:5
++     & "node$exe"  "$basedi
+r/node_modules/yarn/bin/yarn
+.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (Loade  
+  d config from app-confi   
+ g.yaml:String) [], Remo    
+teException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+C:\Users\ritzy\Desktop\backs
+tage-microcks\node_modules\@
+rspack\dev-server\dist\serve
+r.js:1658
+            throw error;
+            ^
+
+Error: listen EADDRINUSE: 
+address already in use 
+::1:3000
+    at 
+Server.setupListenHandle 
+[as _listen2] 
+(node:net:1908:16)
+    at listenInCluster 
+(node:net:1965:12)
+    at 
+GetAddrInfoReqWrap.doListen 
+[as callback] 
+(node:net:2139:7)
+    at 
+GetAddrInfoReqWrap.onlookup 
+[as oncomplete] 
+(node:dns:113:8) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::1',
+  port: 3000
+}
+
+Node.js v20.20.0

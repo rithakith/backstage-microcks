@@ -13,12 +13,12 @@ const backend = createBackend();
 backend.add(import('@backstage/plugin-app-backend'));
 backend.add(import('@backstage/plugin-proxy-backend'));
 
-// scaffolder plugin
-backend.add(import('@backstage/plugin-scaffolder-backend'));
-backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
-backend.add(
-  import('@backstage/plugin-scaffolder-backend-module-notifications'),
-);
+// scaffolder plugin (disabled - isolated-vm native module doesn't build on Windows)
+// backend.add(import('@backstage/plugin-scaffolder-backend'));
+// backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
+// backend.add(
+//   import('@backstage/plugin-scaffolder-backend-module-notifications'),
+// );
 
 // techdocs plugin
 backend.add(import('@backstage/plugin-techdocs-backend'));
@@ -62,5 +62,8 @@ backend.add(import('@backstage/plugin-kubernetes-backend'));
 // notifications and signals plugins
 backend.add(import('@backstage/plugin-notifications-backend'));
 backend.add(import('@backstage/plugin-signals-backend'));
+
+// microcks catalog provider
+backend.add(import('@microcks/microcks-backstage-provider'));
 
 backend.start();
